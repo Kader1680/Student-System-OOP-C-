@@ -1,19 +1,15 @@
-#include <iostream>
-#include <string>
-using namespace std;
-class Teacher{
+// this class is mohter of any class can inherte the data any method can reapt of ohter sub class
+class BaseEntity{
     private:
         int id;
         string name;
         int age;
         string NumberPhone;
-        double salary;
-
-        
+        // double salary;
+        // double gpa;
     public:
-        // ----------------------------------------------------
-        // ----- Set all function that input data private -----
-        // ----------------------------------------------------
+        
+
 
         setId(int id){
             // this it refere to id of private
@@ -31,15 +27,8 @@ class Teacher{
             // this it refere to id of private
             this -> NumberPhone = NumberPhone;
         }
-        setSalary(double salary){
-            // this it refere to id of private
-            this -> salary = salary;
-        }
-        // ----------------------------------------------------
-        // ----- Get all function that input data private -----
-        // ----------------------------------------------------
 
-        // get return value without parameter function 
+
         getId(){
             return id;
         }
@@ -52,8 +41,5 @@ class Teacher{
         }
         getNumberPhone(){
             return NumberPhone;
-        }
-        getSalary(){
-            return salary;
         }
 };

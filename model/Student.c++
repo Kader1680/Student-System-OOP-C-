@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Student{
+class Student:BaseEntity{
     private:
-        int id;
-        string name;
-        int age;
+        // int id;
+        // string name;
+        // int age;
+        // string NumberPhone;
         double gpa;
-        string NumberPhone;
 
         
     public:
@@ -27,14 +27,15 @@ class Student{
             // this it refere to id of private
             this -> age = age;
         }
-        setGpa(int gpa){
-            // this it refere to id of private
-            this -> gpa = gpa;
-        }
         setNumberPhone(string NumberPhone){
             // this it refere to id of private
             this -> NumberPhone = NumberPhone;
         }
+        setGpa(double gpa){
+            // this it refere to id of private
+            this -> gpa = gpa;
+        }
+        
 
         // ----------------------------------------------------
         // ----- Get all function that input data private -----
@@ -51,10 +52,10 @@ class Student{
         getAge(){
             return age;
         }
-        getGpa(){
-            return gpa;
-        }
         getNumberPhone(){
             return NumberPhone;
+        }
+        getGpa(){
+            return gpa;
         }
 };
